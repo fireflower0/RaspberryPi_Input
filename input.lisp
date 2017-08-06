@@ -6,7 +6,7 @@
 ;; Load wrapper API
 (load "libwiringPi.lisp" :external-format :utf-8)
 
-;; Define GPIO11(pin 23) with the name "+pin+"
+;; Define GPIO17(pin 11) with the name "+pin+"
 (defconstant +pin+ 17)
 
 (defun digi-input ()
@@ -16,7 +16,7 @@
   ;; Set GPIO11 to input mode
   (pinMode +pin+ 0)
 
-  ;; Read the status of the GPIO pin
+  ;; Set the state when nothing is connected to the terminal
   (pullUpDnControl +pin+ 2)
 
   ;; Infinite loop: "Ctrl-c" to exit the loop
