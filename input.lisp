@@ -13,7 +13,7 @@
   ;; Initialize GPIO
   (wiringPiSetupGpio)
   
-  ;; Set GPIO11 to input mode
+  ;; Set GPIO17 to input mode
   (pinMode +pin+ 0)
 
   ;; Set the state when nothing is connected to the terminal
